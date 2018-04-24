@@ -34,6 +34,12 @@ class Empleado {
      * @ORM\Column(name="email",type="string")
      */
     protected $email;
+    
+    /**
+     * @ORM\Column(name="realizaList",type="string")
+     */
+    protected $realizaList;
+    
 
 
     public function getData(){
@@ -70,6 +76,28 @@ class Empleado {
         $this->id=$id;
     }
 
+    /**
+     * Get realizaList.
+     *
+     * @return STRING
+     */
+    public function getRealizaList()
+    {
+        return $this->realizaList;
+    }
+    
+    
+    /**
+     * Set realizalist.
+     *
+     * @param string $realizaList
+     *
+     * @return empleado
+     */
+    public function setRealizaList($realizaList)
+    {
+        $this->realizaList=$realizaList;
+    }
     /**
      * Set nombre.
      *

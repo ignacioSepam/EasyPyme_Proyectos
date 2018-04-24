@@ -33,6 +33,36 @@ class Proyecto{
     
     protected $descripcion;
     
+     /**
+     * Get realizaList.
+     *
+     * @return STRING
+     */
+    public function getRealizaList()
+    {
+        return $this->realizaList;
+    }
+    
+    
+    /**
+     * Set realizalist.
+     *
+     * @param string $realizaList
+     *
+     * @return empleado
+     */
+    public function setRealizaList($realizaList)
+    {
+        $this->realizaList=$realizaList;
+    }
+    /**
+     * Set nombre.
+     *
+     * @param string $nombre
+     *
+     * @return Empleado
+     */
+    
     public function setData($data)
     {
         $this->id           = $data['id'] ?? null;
