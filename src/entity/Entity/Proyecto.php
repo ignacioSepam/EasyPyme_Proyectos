@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  * @Orm\Table(name="Proyectos")
+ * @OneToMany(mappedBy="empleado")
  */
 
 class Proyecto{
@@ -33,35 +34,13 @@ class Proyecto{
     
     protected $descripcion;
     
-     /**
-     * Get realizaList.
-     *
-     * @return STRING
+    /**
+     * 
+     * @ORM\Column (name="realizaList",type="string")
      */
-    public function getRealizaList()
-    {
-        return $this->realizaList;
-    }
+    protected $realizaList;
     
     
-    /**
-     * Set realizalist.
-     *
-     * @param string $realizaList
-     *
-     * @return empleado
-     */
-    public function setRealizaList($realizaList)
-    {
-        $this->realizaList=$realizaList;
-    }
-    /**
-     * Set nombre.
-     *
-     * @param string $nombre
-     *
-     * @return Empleado
-     */
     
     public function setData($data)
     {
@@ -77,6 +56,7 @@ class Proyecto{
            'id'=> $this->id,
             'nombre'=> $this->nombre,
             'descripcion'=> $this->descripcion,
+            'realizaList'=>$this->realizaList
                  
         );
     
@@ -143,4 +123,35 @@ class Proyecto{
     {
         return $this->descripcion;
     }
+     /**
+     * Get realizaList.
+     *
+     * @return STRING
+     */
+    public function getRealizaList()
+    {
+        return $this->realizaList;
+    }
+    
+    
+    /**
+     * Set realizalist.
+     *
+     * @param string $realizaList
+     *
+     * @return proyecto
+     */
+    public function setRealizaList($realizaList)
+    {
+        $this->realizaList=$realizaList;
+    }
+    /**
+     * Set nombre.
+     *
+     * @param string $nombre
+     *
+     * @return proyecto
+     */
+    
+    
 }

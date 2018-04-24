@@ -14,6 +14,7 @@ class Realiza{
      * @ORM\Id
      * @ORM\Column(name="id",type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @OneToMany(inversedBy="Realiza")
      */
     protected $id;
     

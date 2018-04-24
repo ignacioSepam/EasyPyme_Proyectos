@@ -6,7 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @Orm\Table(name="Empleado")
+ * @ORM\Table(name="Empleado")
+ * @ORM\OneToMany(targetEntity="Realiza",mappedBy="empleado", cascasde={"persist","remove")
  */
 
 class Empleado {
@@ -76,28 +77,7 @@ class Empleado {
         $this->id=$id;
     }
 
-    /**
-     * Get realizaList.
-     *
-     * @return STRING
-     */
-    public function getRealizaList()
-    {
-        return $this->realizaList;
-    }
     
-    
-    /**
-     * Set realizalist.
-     *
-     * @param string $realizaList
-     *
-     * @return empleado
-     */
-    public function setRealizaList($realizaList)
-    {
-        $this->realizaList=$realizaList;
-    }
     /**
      * Set nombre.
      *
@@ -168,5 +148,27 @@ class Empleado {
     public function getEmail()
     {
         return $this->email;
+    }
+    /**
+     * Get realizaList.
+     *
+     * @return STRING
+     */
+    public function getRealizaList()
+    {
+        return $this->realizaList;
+    }
+    
+    
+    /**
+     * Set realizalist.
+     *
+     * @param string $realizaList
+     *
+     * @return empleado
+     */
+    public function setRealizaList($realizaList)
+    {
+        $this->realizaList=$realizaList;
     }
 }
