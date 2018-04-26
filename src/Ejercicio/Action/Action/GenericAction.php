@@ -1,6 +1,6 @@
 <?php
 
-namespace action\action;
+namespace Ejercicio\Action\Action;
 
 abstract class GenericAction {
 

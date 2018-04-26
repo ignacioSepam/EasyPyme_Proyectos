@@ -1,7 +1,7 @@
 <?php
 
-namespace action\validation;
-use action\validation\GenericValidation;
+namespace Ejercicio\Action\Validation;
+use Core\Utilidades\Check;
 
 class ProyectosValidation extends GenericValidation {
     

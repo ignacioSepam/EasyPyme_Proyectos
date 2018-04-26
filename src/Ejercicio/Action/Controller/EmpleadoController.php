@@ -1,10 +1,10 @@
 <?php
-namespace action\controller;
+namespace Ejercicio\Action\Controller;
 
 use Slim\Http\Request;
 use Slim\Http\Response;
-use action\action\EmpleadoAction;
-use entity\Entity\Empleado;
+use Ejercicio\Action\Action\EmpleadoAction;
+use Ejercicio\Entity\Entity\Empleado;
 
 
 

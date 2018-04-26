@@ -1,8 +1,8 @@
 <?php
 
-namespace action\validation;
+namespace Ejercicio\Action\Validation;
 
-use action\action\GenericAction;
+use Ejercicio\Action\Action\GenericAction;
 
 abstract class GenericValidation extends GenericAction {
     

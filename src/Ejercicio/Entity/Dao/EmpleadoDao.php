@@ -1,8 +1,9 @@
 <?php
 
-namespace entity\Dao;
+namespace Ejercicio\Entity\Dao;
 
-use entity\Dao\GenericDao;
+use Ejercicio\Entity\Dao\GenericDao;
+
 //hace referencia a la clase Dao que se encuentra dentro de la carpeta Dao
 
 
@@ -13,7 +14,7 @@ class EmpleadoDao extends GenericDao {
     public function __construct() {
         parent::__construct();
         
-        $this->entityName = '\entity\Entity\Empleado';
+        $this->entityName = 'Ejercicio\Entity\Entity\Empleado';
     }
 }
 

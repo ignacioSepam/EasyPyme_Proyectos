@@ -1,13 +1,13 @@
 <?php
-namespace action\action;
+namespace Ejercicio\Action\Action;
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-use action\action\GenericAction;
-use entity\Dao\RealizaDao;
-use action\validation\RealizaValidation;
+use Ejercicio\Action\Action\GenericAction;
+use Ejercicio\Entity\Dao\RealizaDao;
+use Ejercicio\Action\Validation\RealizaValidation;
 
 class RealizaAction extends GenericAction {
     

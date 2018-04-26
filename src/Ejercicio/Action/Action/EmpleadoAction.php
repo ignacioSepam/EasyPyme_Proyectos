@@ -1,9 +1,9 @@
 <?php
-namespace action\action;
+namespace Ejercicio\Action\Action;
 
-use action\action\GenericAction;
-use entity\Dao\EmpleadoDao;
-use action\validation\EmpleadoValidation;
+use Ejercicio\Action\Action\GenericAction;
+use Ejercicio\Entity\Dao\EmpleadoDao;
+use Ejercicio\Action\Validation\EmpleadoValidation;
 
 class EmpleadoAction extends GenericAction {
     

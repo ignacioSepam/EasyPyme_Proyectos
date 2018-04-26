@@ -1,6 +1,6 @@
 <?php
 
-namespace entity\Dao;
+namespace Ejercicio\Entity\Dao;
 
 //con este archivo podemos crear las rutas para crear entidades que generará los objetos
 

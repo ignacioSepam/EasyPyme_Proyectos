@@ -1,6 +1,6 @@
 <?php
-namespace action\validation;
-use action\validation\GenericValidation;
+namespace Ejercicio\Action\Validation;
+use Ejercicio\Action\Validation\GenericValidation;
 
 class RealizaValidation extends GenericValidation {
      

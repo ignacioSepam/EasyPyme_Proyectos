@@ -1,12 +1,12 @@
 <?php
-namespace action\controller;
+namespace Ejercicio\Action\Controller;
 
 use Slim\Http\Request;
 use Slim\Http\Response;
 
-use entity\Dao\ProyectoDao;
-use entity\Entity\Proyecto;
-use action\action\ProyectosAction;
+use Ejercicio\Entity\Dao\ProyectoDao;
+use Ejercicio\Entity\Entity\Proyecto;
+use Ejercicio\Action\Action\ProyectosAction;
 // Routes
 
 

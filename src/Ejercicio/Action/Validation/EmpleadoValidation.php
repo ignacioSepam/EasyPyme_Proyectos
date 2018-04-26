@@ -1,8 +1,8 @@
 <?php
-namespace action\validation;
+namespace Ejercicio\Action\Validation;
 
-use action\validation\GenericValidation;
-use utilidades\Check;
+use Ejercicio\Action\Validation\GenericValidation;
+use Core\Utilidades\Check;
 
 class EmpleadoValidation extends GenericValidation {
     

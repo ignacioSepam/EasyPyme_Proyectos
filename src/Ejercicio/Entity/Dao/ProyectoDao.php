@@ -1,8 +1,8 @@
 <?php
 
-namespace entity\Dao;
+namespace Ejercicio\Entity\Dao;
 
-use entity\Dao\GenericDao;
+use Ejercicio\Entity\Dao\GenericDao;
 
 
 
@@ -13,7 +13,7 @@ class ProyectoDao extends GenericDao {
         //te añade el constructor del padre automaticamente por que está obligado.
         parent::__construct();
         
-        $this->entityName = '\entity\Entity\Proyecto';
+        $this->entityName = 'Ejercicio\Entity\Entity\Proyecto';
         //entityName->hace referencia a las entidades Entity
     }
 

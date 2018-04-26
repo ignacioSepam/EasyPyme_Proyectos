@@ -1,5 +1,5 @@
 <?php
-namespace utilidades;
+namespace Core\Utilidades;
 
 class Check{
     

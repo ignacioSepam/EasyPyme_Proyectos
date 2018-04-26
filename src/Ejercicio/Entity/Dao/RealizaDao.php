@@ -1,7 +1,7 @@
 <?php
 
-namespace entity\Dao;
-use entity\Dao\GenericDao;
+namespace Ejercicio\Entity\Dao;
+use Ejercicio\Entity\Dao\GenericDao;
 
 class RealizaDao extends GenericDao {
     
@@ -10,7 +10,7 @@ class RealizaDao extends GenericDao {
     public function __construct() {
         parent::__construct();
         
-        $this->entityName = '\entity\Entity\Realiza';
+        $this->entityName = 'Ejercicio\Entity\Entity\Realiza';
     }
     
     
